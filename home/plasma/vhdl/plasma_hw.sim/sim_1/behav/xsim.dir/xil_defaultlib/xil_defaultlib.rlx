@@ -1,0 +1,21 @@
+0.6
+2016.4
+Jan 23 2017
+19:37:30
+C:/cygwin/home/redal/plasma/vhdl/alu.vhd,1618516129,vhdl,,,,alu,,,,,,,,
+C:/cygwin/home/redal/plasma/vhdl/bus_mux.vhd,1618516129,vhdl,,,,bus_mux,,,,,,,,
+C:/cygwin/home/redal/plasma/vhdl/cache.vhd,1618516129,vhdl,,,,cache,,,,,,,,
+C:/cygwin/home/redal/plasma/vhdl/control.vhd,1618516129,vhdl,,,,control,,,,,,,,
+C:/cygwin/home/redal/plasma/vhdl/eth_dma.vhd,1618516129,vhdl,,,,eth_dma,,,,,,,,
+C:/cygwin/home/redal/plasma/vhdl/mem_ctrl.vhd,1618516129,vhdl,,,,mem_ctrl,,,,,,,,
+C:/cygwin/home/redal/plasma/vhdl/mlite_cpu.vhd,1618516129,vhdl,,,,mlite_cpu,,,,,,,,
+C:/cygwin/home/redal/plasma/vhdl/mlite_pack.vhd,1618516129,vhdl,C:/cygwin/home/redal/plasma/vhdl/alu.vhd;C:/cygwin/home/redal/plasma/vhdl/bus_mux.vhd;C:/cygwin/home/redal/plasma/vhdl/cache.vhd;C:/cygwin/home/redal/plasma/vhdl/control.vhd;C:/cygwin/home/redal/plasma/vhdl/eth_dma.vhd;C:/cygwin/home/redal/plasma/vhdl/mem_ctrl.vhd;C:/cygwin/home/redal/plasma/vhdl/mlite_cpu.vhd;C:/cygwin/home/redal/plasma/vhdl/mult.vhd;C:/cygwin/home/redal/plasma/vhdl/pc_next.vhd;C:/cygwin/home/redal/plasma/vhdl/pipeline.vhd;C:/cygwin/home/redal/plasma/vhdl/plasma.vhd;C:/cygwin/home/redal/plasma/vhdl/ram.vhd;C:/cygwin/home/redal/plasma/vhdl/reg_bank.vhd;C:/cygwin/home/redal/plasma/vhdl/shifter.vhd;C:/cygwin/home/redal/plasma/vhdl/tbench.vhd;C:/cygwin/home/redal/plasma/vhdl/uart.vhd,,,mlite_pack,,,,,,,,
+C:/cygwin/home/redal/plasma/vhdl/mult.vhd,1618516129,vhdl,,,,mult,,,,,,,,
+C:/cygwin/home/redal/plasma/vhdl/pc_next.vhd,1618516129,vhdl,,,,pc_next,,,,,,,,
+C:/cygwin/home/redal/plasma/vhdl/pipeline.vhd,1618516129,vhdl,,,,pipeline,,,,,,,,
+C:/cygwin/home/redal/plasma/vhdl/plasma.vhd,1618517179,vhdl,,,,plasma,,,,,,,,
+C:/cygwin/home/redal/plasma/vhdl/ram.vhd,1618556582,vhdl,,,,ram,,,,,,,,
+C:/cygwin/home/redal/plasma/vhdl/reg_bank.vhd,1618516129,vhdl,,,,reg_bank,,,,,,,,
+C:/cygwin/home/redal/plasma/vhdl/shifter.vhd,1618516129,vhdl,,,,shifter,,,,,,,,
+C:/cygwin/home/redal/plasma/vhdl/tbench.vhd,1618516129,vhdl,,,,tbench,,,,,,,,
+C:/cygwin/home/redal/plasma/vhdl/uart.vhd,1618516129,vhdl,,,,uart,,,,,,,,
