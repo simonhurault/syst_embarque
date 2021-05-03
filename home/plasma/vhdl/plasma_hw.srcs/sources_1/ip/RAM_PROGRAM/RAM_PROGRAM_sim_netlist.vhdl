@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
 -- Date        : Tue Apr 20 15:59:41 2021
 -- Host        : tp-autom-08 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/cygwin/home/plasma/vhdl/plasma_hw.srcs/sources_1/ip/RAM_PROGRAM/RAM_PROGRAM_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top RAM_PROGRAM -prefix
+--               RAM_PROGRAM_ RAM_PROGRAM_sim_netlist.vhdl
 -- Design      : RAM_PROGRAM
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -25,8 +25,6 @@ entity RAM_PROGRAM_blk_mem_gen_prim_wrapper is
     dina : in STD_LOGIC_VECTOR ( 7 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of RAM_PROGRAM_blk_mem_gen_prim_wrapper : entity is "blk_mem_gen_prim_wrapper";
 end RAM_PROGRAM_blk_mem_gen_prim_wrapper;
 
 architecture STRUCTURE of RAM_PROGRAM_blk_mem_gen_prim_wrapper is
@@ -1074,8 +1072,6 @@ entity RAM_PROGRAM_blk_mem_gen_prim_width is
     dina : in STD_LOGIC_VECTOR ( 7 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of RAM_PROGRAM_blk_mem_gen_prim_width : entity is "blk_mem_gen_prim_width";
 end RAM_PROGRAM_blk_mem_gen_prim_width;
 
 architecture STRUCTURE of RAM_PROGRAM_blk_mem_gen_prim_width is
@@ -1205,8 +1201,6 @@ entity RAM_PROGRAM_blk_mem_gen_generic_cstr is
     dina : in STD_LOGIC_VECTOR ( 31 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of RAM_PROGRAM_blk_mem_gen_generic_cstr : entity is "blk_mem_gen_generic_cstr";
 end RAM_PROGRAM_blk_mem_gen_generic_cstr;
 
 architecture STRUCTURE of RAM_PROGRAM_blk_mem_gen_generic_cstr is
@@ -1271,8 +1265,6 @@ entity RAM_PROGRAM_blk_mem_gen_top is
     dina : in STD_LOGIC_VECTOR ( 31 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of RAM_PROGRAM_blk_mem_gen_top : entity is "blk_mem_gen_top";
 end RAM_PROGRAM_blk_mem_gen_top;
 
 architecture STRUCTURE of RAM_PROGRAM_blk_mem_gen_top is
@@ -1302,8 +1294,6 @@ entity RAM_PROGRAM_blk_mem_gen_v8_3_5_synth is
     dina : in STD_LOGIC_VECTOR ( 31 downto 0 );
     wea : in STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of RAM_PROGRAM_blk_mem_gen_v8_3_5_synth : entity is "blk_mem_gen_v8_3_5_synth";
 end RAM_PROGRAM_blk_mem_gen_v8_3_5_synth;
 
 architecture STRUCTURE of RAM_PROGRAM_blk_mem_gen_v8_3_5_synth is
@@ -1535,8 +1525,6 @@ entity RAM_PROGRAM_blk_mem_gen_v8_3_5 is
   attribute C_WRITE_WIDTH_B of RAM_PROGRAM_blk_mem_gen_v8_3_5 : entity is 32;
   attribute C_XDEVICEFAMILY : string;
   attribute C_XDEVICEFAMILY of RAM_PROGRAM_blk_mem_gen_v8_3_5 : entity is "artix7";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of RAM_PROGRAM_blk_mem_gen_v8_3_5 : entity is "blk_mem_gen_v8_3_5";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of RAM_PROGRAM_blk_mem_gen_v8_3_5 : entity is "yes";
 end RAM_PROGRAM_blk_mem_gen_v8_3_5;

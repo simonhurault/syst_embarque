@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
 // Date        : Tue Apr 20 15:59:41 2021
 // Host        : tp-autom-08 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               c:/cygwin/home/plasma/vhdl/plasma_hw.srcs/sources_1/ip/RAM_PROGRAM/RAM_PROGRAM_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top RAM_PROGRAM -prefix
+//               RAM_PROGRAM_ RAM_PROGRAM_sim_netlist.v
 // Design      : RAM_PROGRAM
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -198,7 +198,6 @@ module RAM_PROGRAM
         .web({1'b0,1'b0,1'b0,1'b0}));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_generic_cstr" *) 
 module RAM_PROGRAM_blk_mem_gen_generic_cstr
    (doutb,
     clka,
@@ -262,7 +261,6 @@ module RAM_PROGRAM_blk_mem_gen_generic_cstr
         .wea(wea));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_width" *) 
 module RAM_PROGRAM_blk_mem_gen_prim_width
    (doutb,
     clka,
@@ -418,7 +416,6 @@ module RAM_PROGRAM_blk_mem_gen_prim_width__parameterized2
         .wea(wea));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper" *) 
 module RAM_PROGRAM_blk_mem_gen_prim_wrapper
    (doutb,
     clka,
@@ -1434,7 +1431,6 @@ module RAM_PROGRAM_blk_mem_gen_prim_wrapper__parameterized2
         .O(ram_ena));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_top" *) 
 module RAM_PROGRAM_blk_mem_gen_top
    (doutb,
     clka,
@@ -1493,7 +1489,7 @@ endmodule
 (* C_USE_URAM = "0" *) (* C_WEA_WIDTH = "4" *) (* C_WEB_WIDTH = "4" *) 
 (* C_WRITE_DEPTH_A = "4096" *) (* C_WRITE_DEPTH_B = "4096" *) (* C_WRITE_MODE_A = "NO_CHANGE" *) 
 (* C_WRITE_MODE_B = "READ_FIRST" *) (* C_WRITE_WIDTH_A = "32" *) (* C_WRITE_WIDTH_B = "32" *) 
-(* C_XDEVICEFAMILY = "artix7" *) (* ORIG_REF_NAME = "blk_mem_gen_v8_3_5" *) (* downgradeipidentifiedwarnings = "yes" *) 
+(* C_XDEVICEFAMILY = "artix7" *) (* downgradeipidentifiedwarnings = "yes" *) 
 module RAM_PROGRAM_blk_mem_gen_v8_3_5
    (clka,
     rsta,
@@ -1755,7 +1751,6 @@ module RAM_PROGRAM_blk_mem_gen_v8_3_5
         .wea(wea));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_v8_3_5_synth" *) 
 module RAM_PROGRAM_blk_mem_gen_v8_3_5_synth
    (doutb,
     clka,

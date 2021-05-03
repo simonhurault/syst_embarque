@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
 // Date        : Tue Apr 20 15:59:41 2021
 // Host        : tp-autom-08 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               c:/cygwin/home/plasma/vhdl/plasma_hw.srcs/sources_1/ip/RAM_PROGRAM/RAM_PROGRAM_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top RAM_PROGRAM -prefix
+//               RAM_PROGRAM_ RAM_PROGRAM_stub.v
 // Design      : RAM_PROGRAM
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a35tcpg236-1

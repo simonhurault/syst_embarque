@@ -13,10 +13,10 @@ Linker script and memory map
 
 Address of section .text set to 0x10000000
 LOAD boot.o
-LOAD test_led.o
+LOAD seg.o
 LOAD no_os.o
 
-.text           0x10000000      0x458
+.text           0x10000000      0x464
                 0x10000000                _ftext=.
  *(.text)
  .text          0x10000000      0x200 boot.o
@@ -28,17 +28,18 @@ LOAD no_os.o
                 0x1000003c                interrupt_service_routine
                 0x100001f4                OS_Syscall
                 0x10000128                OS_AsmInterruptEnable
- .text          0x10000200       0xb4 test_led.o
+ .text          0x10000200       0x74 seg.o
                 0x10000200                main
- .text          0x100002b4      0x1a4 no_os.o
-                0x100002b4                putchar
-                0x100002f8                puts
-                0x10000418                kbhit
-                0x1000042c                getch
-                0x100003f8                OS_InterruptServiceRoutine
-                0x1000039c                print_hex
-                0x10000364                Led
-                0x10000388                InputName
+ .text          0x10000274      0x1f0 no_os.o
+                0x10000274                putchar
+                0x100002b8                puts
+                0x100003d8                kbhit
+                0x10000418                SEG7
+                0x100003ec                getch
+                0x100003b8                OS_InterruptServiceRoutine
+                0x1000035c                print_hex
+                0x10000324                Led
+                0x10000348                InputName
  *(.stub)
  *(.gnu.warning)
  *(.gnu.linkonce.t*)
@@ -50,13 +51,13 @@ LOAD no_os.o
 
 .fini
  *(.fini)
-                0x10000458                _ecode=.
+                0x10000464                _ecode=.
 
-.reginfo        0x10000458       0x18
+.reginfo        0x10000464       0x18
  *(.reginfo)
- .reginfo       0x10000458       0x18 boot.o
- .reginfo       0x10000470       0x18 test_led.o
- .reginfo       0x10000470       0x18 no_os.o
+ .reginfo       0x10000464       0x18 boot.o
+ .reginfo       0x1000047c       0x18 seg.o
+ .reginfo       0x1000047c       0x18 no_os.o
 
 .ctors
  *(.ctors)
@@ -76,25 +77,24 @@ LOAD no_os.o
 .sdefini
  *(.sdefini)
 
-.rodata         0x10000470        0x9
+.rodata
  *(.rodata)
- .rodata        0x10000470        0x9 test_led.o
  *(.rdata)
  *(.gnu.linkonce.r*)
 
 .rodata1
  *(.rodata1)
-                0x10000479                _etext=.
-                0x10000479                PROVIDE (etext, .)
+                0x10000494                _etext=.
+                0x10000494                PROVIDE (etext, .)
 
-.data           0x10000479        0x0
-                0x10000479                _fdata=.
+.data           0x1000047c        0x0
+                0x1000047c                _fdata=.
  *(.data)
  *(.gnu.linkonce.d*)
 
 .data1
  *(.data1)
-                0x10008469                _gp=(.+0x7ff0)
+                0x1000846c                _gp=(.+0x7ff0)
 
 .lit8
  *(.lit8)
@@ -105,10 +105,10 @@ LOAD no_os.o
 .sdata
  *(.sdata)
  *(.gnu.linkonce.s*)
-                0x10000479                _edata=.
-                0x10000479                PROVIDE (edata, .)
+                0x1000047c                _edata=.
+                0x1000047c                PROVIDE (edata, .)
                 0x10000480                .=ALIGN(0x8)
-                0x10000479                __bss_start=.
+                0x1000047c                __bss_start=.
                 0x10000480                _fbss=__bss_start
 
 .sbss

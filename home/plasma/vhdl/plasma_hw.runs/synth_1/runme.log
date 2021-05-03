@@ -14,46 +14,46 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 10412 
+INFO: Helper process launched with PID 48976 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 315.738 ; gain = 105.461
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 284.813 ; gain = 75.293
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'plasma_basys3' [C:/cygwin/home/plasma/vhdl/plasma_hw.srcs/sources_1/new/plasma_basys3.vhd:50]
-INFO: [Synth 8-3491] module 'top_7seg' declared at 'C:/cygwin/home/plasma/vhdl/7seg/7seg/7seg_top.vhd:26' bound to instance 'inst_4' of component 'top_7seg' [C:/cygwin/home/plasma/vhdl/plasma_hw.srcs/sources_1/new/plasma_basys3.vhd:120]
-INFO: [Synth 8-638] synthesizing module 'top_7seg' [C:/cygwin/home/plasma/vhdl/7seg/7seg/7seg_top.vhd:38]
-INFO: [Synth 8-3491] module 'clk50' declared at 'C:/cygwin/home/plasma/vhdl/7seg/7seg/clk50.vhd:26' bound to instance 'clk_div1' of component 'clk50' [C:/cygwin/home/plasma/vhdl/7seg/7seg/7seg_top.vhd:86]
-INFO: [Synth 8-638] synthesizing module 'clk50' [C:/cygwin/home/plasma/vhdl/7seg/7seg/clk50.vhd:32]
-INFO: [Synth 8-256] done synthesizing module 'clk50' (1#1) [C:/cygwin/home/plasma/vhdl/7seg/7seg/clk50.vhd:32]
-INFO: [Synth 8-3491] module 'clk190' declared at 'C:/cygwin/home/plasma/vhdl/7seg/7seg/clk190.vhd:26' bound to instance 'clk_div2' of component 'clk190' [C:/cygwin/home/plasma/vhdl/7seg/7seg/7seg_top.vhd:93]
-INFO: [Synth 8-638] synthesizing module 'clk190' [C:/cygwin/home/plasma/vhdl/7seg/7seg/clk190.vhd:32]
-INFO: [Synth 8-256] done synthesizing module 'clk190' (2#1) [C:/cygwin/home/plasma/vhdl/7seg/7seg/clk190.vhd:32]
-INFO: [Synth 8-3491] module 'cpt' declared at 'C:/cygwin/home/plasma/vhdl/7seg/7seg/cpt.vhd:26' bound to instance 'compteur' of component 'cpt' [C:/cygwin/home/plasma/vhdl/7seg/7seg/7seg_top.vhd:100]
-INFO: [Synth 8-638] synthesizing module 'cpt' [C:/cygwin/home/plasma/vhdl/7seg/7seg/cpt.vhd:32]
-INFO: [Synth 8-256] done synthesizing module 'cpt' (3#1) [C:/cygwin/home/plasma/vhdl/7seg/7seg/cpt.vhd:32]
-INFO: [Synth 8-3491] module 'gestion_an' declared at 'C:/cygwin/home/plasma/vhdl/7seg/7seg/gestion_an.vhd:26' bound to instance 'gestion' of component 'gestion_an' [C:/cygwin/home/plasma/vhdl/7seg/7seg/7seg_top.vhd:107]
-INFO: [Synth 8-638] synthesizing module 'gestion_an' [C:/cygwin/home/plasma/vhdl/7seg/7seg/gestion_an.vhd:32]
-INFO: [Synth 8-256] done synthesizing module 'gestion_an' (4#1) [C:/cygwin/home/plasma/vhdl/7seg/7seg/gestion_an.vhd:32]
-INFO: [Synth 8-3491] module 'mux_7' declared at 'C:/cygwin/home/plasma/vhdl/7seg/7seg/mux_7.vhd:26' bound to instance 'mux' of component 'mux_7' [C:/cygwin/home/plasma/vhdl/7seg/7seg/7seg_top.vhd:114]
-INFO: [Synth 8-638] synthesizing module 'mux_7' [C:/cygwin/home/plasma/vhdl/7seg/7seg/mux_7.vhd:35]
-WARNING: [Synth 8-614] signal 'E1' is read in the process but is not in the sensitivity list [C:/cygwin/home/plasma/vhdl/7seg/7seg/mux_7.vhd:39]
-WARNING: [Synth 8-614] signal 'E2' is read in the process but is not in the sensitivity list [C:/cygwin/home/plasma/vhdl/7seg/7seg/mux_7.vhd:39]
-WARNING: [Synth 8-614] signal 'E3' is read in the process but is not in the sensitivity list [C:/cygwin/home/plasma/vhdl/7seg/7seg/mux_7.vhd:39]
-WARNING: [Synth 8-614] signal 'E4' is read in the process but is not in the sensitivity list [C:/cygwin/home/plasma/vhdl/7seg/7seg/mux_7.vhd:39]
-INFO: [Synth 8-256] done synthesizing module 'mux_7' (5#1) [C:/cygwin/home/plasma/vhdl/7seg/7seg/mux_7.vhd:35]
-INFO: [Synth 8-3491] module 'hex7seg' declared at 'C:/cygwin/home/plasma/vhdl/7seg/7seg/hex7seg.vhd:25' bound to instance 'hex7' of component 'hex7seg' [C:/cygwin/home/plasma/vhdl/7seg/7seg/7seg_top.vhd:124]
-INFO: [Synth 8-638] synthesizing module 'hex7seg' [C:/cygwin/home/plasma/vhdl/7seg/7seg/hex7seg.vhd:31]
-INFO: [Synth 8-256] done synthesizing module 'hex7seg' (6#1) [C:/cygwin/home/plasma/vhdl/7seg/7seg/hex7seg.vhd:31]
-INFO: [Synth 8-256] done synthesizing module 'top_7seg' (7#1) [C:/cygwin/home/plasma/vhdl/7seg/7seg/7seg_top.vhd:38]
-WARNING: [Synth 8-5640] Port 'clk190' is missing in component declaration [C:/cygwin/home/plasma/vhdl/plasma_hw.srcs/sources_1/new/plasma_basys3.vhd:87]
-INFO: [Synth 8-3491] module 'Clkdiv' declared at 'C:/cygwin/home/plasma/vhdl/Clkdiv.vhd:35' bound to instance 'inst_1' of component 'Clkdiv' [C:/cygwin/home/plasma/vhdl/plasma_hw.srcs/sources_1/new/plasma_basys3.vhd:124]
-INFO: [Synth 8-638] synthesizing module 'Clkdiv' [C:/cygwin/home/plasma/vhdl/Clkdiv.vhd:41]
-INFO: [Synth 8-256] done synthesizing module 'Clkdiv' (8#1) [C:/cygwin/home/plasma/vhdl/Clkdiv.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'plasma_basys3' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/plasma_hw.srcs/sources_1/new/plasma_basys3.vhd:50]
+INFO: [Synth 8-3491] module 'top_7seg' declared at 'D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/7seg/7seg_top.vhd:26' bound to instance 'inst_4' of component 'top_7seg' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/plasma_hw.srcs/sources_1/new/plasma_basys3.vhd:120]
+INFO: [Synth 8-638] synthesizing module 'top_7seg' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/7seg/7seg_top.vhd:38]
+INFO: [Synth 8-3491] module 'clk50' declared at 'D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/7seg/clk50.vhd:26' bound to instance 'clk_div1' of component 'clk50' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/7seg/7seg_top.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'clk50' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/7seg/clk50.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'clk50' (1#1) [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/7seg/clk50.vhd:32]
+INFO: [Synth 8-3491] module 'clk190' declared at 'D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/7seg/clk190.vhd:26' bound to instance 'clk_div2' of component 'clk190' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/7seg/7seg_top.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'clk190' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/7seg/clk190.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'clk190' (2#1) [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/7seg/clk190.vhd:32]
+INFO: [Synth 8-3491] module 'cpt' declared at 'D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/7seg/cpt.vhd:26' bound to instance 'compteur' of component 'cpt' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/7seg/7seg_top.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'cpt' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/7seg/cpt.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'cpt' (3#1) [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/7seg/cpt.vhd:32]
+INFO: [Synth 8-3491] module 'gestion_an' declared at 'D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/7seg/gestion_an.vhd:26' bound to instance 'gestion' of component 'gestion_an' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/7seg/7seg_top.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'gestion_an' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/7seg/gestion_an.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'gestion_an' (4#1) [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/7seg/gestion_an.vhd:32]
+INFO: [Synth 8-3491] module 'mux_7' declared at 'D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/7seg/mux_7.vhd:26' bound to instance 'mux' of component 'mux_7' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/7seg/7seg_top.vhd:114]
+INFO: [Synth 8-638] synthesizing module 'mux_7' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/7seg/mux_7.vhd:35]
+WARNING: [Synth 8-614] signal 'E1' is read in the process but is not in the sensitivity list [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/7seg/mux_7.vhd:39]
+WARNING: [Synth 8-614] signal 'E2' is read in the process but is not in the sensitivity list [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/7seg/mux_7.vhd:39]
+WARNING: [Synth 8-614] signal 'E3' is read in the process but is not in the sensitivity list [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/7seg/mux_7.vhd:39]
+WARNING: [Synth 8-614] signal 'E4' is read in the process but is not in the sensitivity list [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/7seg/mux_7.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'mux_7' (5#1) [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/7seg/mux_7.vhd:35]
+INFO: [Synth 8-3491] module 'hex7seg' declared at 'D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/7seg/hex7seg.vhd:25' bound to instance 'hex7' of component 'hex7seg' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/7seg/7seg_top.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'hex7seg' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/7seg/hex7seg.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'hex7seg' (6#1) [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/7seg/hex7seg.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'top_7seg' (7#1) [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/7seg/7seg_top.vhd:38]
+WARNING: [Synth 8-5640] Port 'clk190' is missing in component declaration [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/plasma_hw.srcs/sources_1/new/plasma_basys3.vhd:87]
+INFO: [Synth 8-3491] module 'Clkdiv' declared at 'D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/Clkdiv.vhd:35' bound to instance 'inst_1' of component 'Clkdiv' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/plasma_hw.srcs/sources_1/new/plasma_basys3.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'Clkdiv' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/Clkdiv.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'Clkdiv' (8#1) [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/Clkdiv.vhd:41]
 	Parameter memory_type bound to: XILINX_16X - type: string 
 	Parameter log_file bound to: UNUSED - type: string 
 	Parameter ethernet bound to: 1'b0 
 	Parameter use_cache bound to: 1'b0 
-INFO: [Synth 8-3491] module 'plasma' declared at 'C:/cygwin/home/plasma/vhdl/plasma.vhd:39' bound to instance 'inst_2' of component 'plasma' [C:/cygwin/home/plasma/vhdl/plasma_hw.srcs/sources_1/new/plasma_basys3.vhd:128]
-INFO: [Synth 8-638] synthesizing module 'plasma' [C:/cygwin/home/plasma/vhdl/plasma.vhd:62]
+INFO: [Synth 8-3491] module 'plasma' declared at 'D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/plasma.vhd:39' bound to instance 'inst_2' of component 'plasma' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/plasma_hw.srcs/sources_1/new/plasma_basys3.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'plasma' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/plasma.vhd:62]
 	Parameter memory_type bound to: XILINX_16X - type: string 
 	Parameter log_file bound to: UNUSED - type: string 
 	Parameter ethernet bound to: 1'b0 
@@ -63,139 +63,139 @@ INFO: [Synth 8-638] synthesizing module 'plasma' [C:/cygwin/home/plasma/vhdl/pla
 	Parameter shifter_type bound to: DEFAULT - type: string 
 	Parameter alu_type bound to: DEFAULT - type: string 
 	Parameter pipeline_stages bound to: 3 - type: integer 
-INFO: [Synth 8-3491] module 'mlite_cpu' declared at 'C:/cygwin/home/plasma/vhdl/mlite_cpu.vhd:74' bound to instance 'u1_cpu' of component 'mlite_cpu' [C:/cygwin/home/plasma/vhdl/plasma.vhd:126]
-INFO: [Synth 8-638] synthesizing module 'mlite_cpu' [C:/cygwin/home/plasma/vhdl/mlite_cpu.vhd:94]
+INFO: [Synth 8-3491] module 'mlite_cpu' declared at 'D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/mlite_cpu.vhd:74' bound to instance 'u1_cpu' of component 'mlite_cpu' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/plasma.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'mlite_cpu' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/mlite_cpu.vhd:94]
 	Parameter memory_type bound to: XILINX_16X - type: string 
 	Parameter mult_type bound to: DEFAULT - type: string 
 	Parameter shifter_type bound to: DEFAULT - type: string 
 	Parameter alu_type bound to: DEFAULT - type: string 
 	Parameter pipeline_stages bound to: 3 - type: integer 
-INFO: [Synth 8-3491] module 'pc_next' declared at 'C:/cygwin/home/plasma/vhdl/pc_next.vhd:16' bound to instance 'u1_pc_next' of component 'pc_next' [C:/cygwin/home/plasma/vhdl/mlite_cpu.vhd:182]
-INFO: [Synth 8-638] synthesizing module 'pc_next' [C:/cygwin/home/plasma/vhdl/pc_next.vhd:29]
-INFO: [Synth 8-226] default block is never used [C:/cygwin/home/plasma/vhdl/pc_next.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'pc_next' (9#1) [C:/cygwin/home/plasma/vhdl/pc_next.vhd:29]
-INFO: [Synth 8-3491] module 'mem_ctrl' declared at 'C:/cygwin/home/plasma/vhdl/mem_ctrl.vhd:17' bound to instance 'u2_mem_ctrl' of component 'mem_ctrl' [C:/cygwin/home/plasma/vhdl/mlite_cpu.vhd:194]
-INFO: [Synth 8-638] synthesizing module 'mem_ctrl' [C:/cygwin/home/plasma/vhdl/mem_ctrl.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'mem_ctrl' (10#1) [C:/cygwin/home/plasma/vhdl/mem_ctrl.vhd:40]
-INFO: [Synth 8-3491] module 'control' declared at 'C:/cygwin/home/plasma/vhdl/control.vhd:27' bound to instance 'u3_control' of component 'control' [C:/cygwin/home/plasma/vhdl/mlite_cpu.vhd:217]
-INFO: [Synth 8-638] synthesizing module 'control' [C:/cygwin/home/plasma/vhdl/control.vhd:46]
-INFO: [Synth 8-256] done synthesizing module 'control' (11#1) [C:/cygwin/home/plasma/vhdl/control.vhd:46]
+INFO: [Synth 8-3491] module 'pc_next' declared at 'D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/pc_next.vhd:16' bound to instance 'u1_pc_next' of component 'pc_next' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/mlite_cpu.vhd:182]
+INFO: [Synth 8-638] synthesizing module 'pc_next' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/pc_next.vhd:29]
+INFO: [Synth 8-226] default block is never used [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/pc_next.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'pc_next' (9#1) [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/pc_next.vhd:29]
+INFO: [Synth 8-3491] module 'mem_ctrl' declared at 'D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/mem_ctrl.vhd:17' bound to instance 'u2_mem_ctrl' of component 'mem_ctrl' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/mlite_cpu.vhd:194]
+INFO: [Synth 8-638] synthesizing module 'mem_ctrl' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/mem_ctrl.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'mem_ctrl' (10#1) [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/mem_ctrl.vhd:40]
+INFO: [Synth 8-3491] module 'control' declared at 'D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/control.vhd:27' bound to instance 'u3_control' of component 'control' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/mlite_cpu.vhd:217]
+INFO: [Synth 8-638] synthesizing module 'control' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/control.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'control' (11#1) [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/control.vhd:46]
 	Parameter memory_type bound to: XILINX_16X - type: string 
-INFO: [Synth 8-3491] module 'reg_bank' declared at 'C:/cygwin/home/plasma/vhdl/reg_bank.vhd:18' bound to instance 'u4_reg_bank' of component 'reg_bank' [C:/cygwin/home/plasma/vhdl/mlite_cpu.vhd:235]
-INFO: [Synth 8-638] synthesizing module 'reg_bank' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:39]
+INFO: [Synth 8-3491] module 'reg_bank' declared at 'D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:18' bound to instance 'u4_reg_bank' of component 'reg_bank' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/mlite_cpu.vhd:235]
+INFO: [Synth 8-638] synthesizing module 'reg_bank' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:39]
 	Parameter memory_type bound to: XILINX_16X - type: string 
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:163]
-INFO: [Synth 8-638] synthesizing module 'RAM16X1D' [C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'RAM16X1D' [D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553]
 	Parameter INIT bound to: 16'b0000000000000000 
 	Parameter IS_WCLK_INVERTED bound to: 1'b0 
-INFO: [Synth 8-256] done synthesizing module 'RAM16X1D' (12#1) [C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:180]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:197]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:214]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:163]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:180]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:197]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:214]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:163]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:180]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:197]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:214]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:163]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:180]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:197]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:214]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:163]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:180]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:197]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:214]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:163]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:180]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:197]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:214]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:163]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:180]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:197]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:214]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:163]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:180]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:197]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:214]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:163]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:180]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:197]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:214]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:163]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:180]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:197]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:214]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:163]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:180]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:197]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:214]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:163]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:180]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:197]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:214]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:163]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:180]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:197]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:214]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:163]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:180]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:197]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:214]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:163]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:180]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:197]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:214]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:163]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:180]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:197]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:214]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:163]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:180]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:197]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:214]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:163]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:180]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:197]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:214]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:163]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:180]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:197]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:214]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:163]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:180]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:197]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:214]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:163]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:180]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:197]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:214]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:163]
-INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'C:/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:180]
+INFO: [Synth 8-256] done synthesizing module 'RAM16X1D' (12#1) [D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:180]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:197]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:214]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:163]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:180]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:197]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:214]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:163]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:180]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:197]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:214]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:163]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:180]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:197]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:214]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:163]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:180]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:197]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:214]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:163]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:180]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:197]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:214]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:163]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:180]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:197]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:214]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:163]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:180]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:197]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:214]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:163]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:180]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:197]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:214]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:163]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:180]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:197]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:214]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:163]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:180]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:197]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:214]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:163]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:180]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:197]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:214]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:163]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:180]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:197]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:214]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:163]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:180]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:197]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:214]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:163]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:180]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:197]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:214]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:163]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:180]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:197]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:214]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:163]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:180]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:197]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:214]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:163]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:180]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:197]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:214]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:163]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:180]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:197]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:214]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:163]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:180]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:197]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:214]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:163]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:180]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:197]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit2b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:214]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1a' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:163]
+INFO: [Synth 8-3491] module 'RAM16X1D' declared at 'D:/Vivado/2016.4/scripts/rt/data/unisim_comp.v:36553' bound to instance 'reg_bit1b' of component 'RAM16X1D' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:180]
 INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-256] done synthesizing module 'reg_bank' (13#1) [C:/cygwin/home/plasma/vhdl/reg_bank.vhd:39]
-INFO: [Synth 8-638] synthesizing module 'bus_mux' [C:/cygwin/home/plasma/vhdl/bus_mux.vhd:43]
-INFO: [Synth 8-226] default block is never used [C:/cygwin/home/plasma/vhdl/bus_mux.vhd:64]
-INFO: [Synth 8-256] done synthesizing module 'bus_mux' (14#1) [C:/cygwin/home/plasma/vhdl/bus_mux.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'reg_bank' (13#1) [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/reg_bank.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'bus_mux' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/bus_mux.vhd:43]
+INFO: [Synth 8-226] default block is never used [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/bus_mux.vhd:64]
+INFO: [Synth 8-256] done synthesizing module 'bus_mux' (14#1) [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/bus_mux.vhd:43]
 	Parameter alu_type bound to: DEFAULT - type: string 
-INFO: [Synth 8-638] synthesizing module 'alu' [C:/cygwin/home/plasma/vhdl/alu.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'alu' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/alu.vhd:24]
 	Parameter alu_type bound to: DEFAULT - type: string 
-INFO: [Synth 8-256] done synthesizing module 'alu' (15#1) [C:/cygwin/home/plasma/vhdl/alu.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'alu' (15#1) [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/alu.vhd:24]
 	Parameter shifter_type bound to: DEFAULT - type: string 
-INFO: [Synth 8-638] synthesizing module 'shifter' [C:/cygwin/home/plasma/vhdl/shifter.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'shifter' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/shifter.vhd:25]
 	Parameter shifter_type bound to: DEFAULT - type: string 
-INFO: [Synth 8-256] done synthesizing module 'shifter' (16#1) [C:/cygwin/home/plasma/vhdl/shifter.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'shifter' (16#1) [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/shifter.vhd:25]
 	Parameter mult_type bound to: DEFAULT - type: string 
-INFO: [Synth 8-638] synthesizing module 'mult' [C:/cygwin/home/plasma/vhdl/mult.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'mult' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/mult.vhd:55]
 	Parameter mult_type bound to: DEFAULT - type: string 
-INFO: [Synth 8-256] done synthesizing module 'mult' (17#1) [C:/cygwin/home/plasma/vhdl/mult.vhd:55]
-INFO: [Synth 8-638] synthesizing module 'pipeline' [C:/cygwin/home/plasma/vhdl/pipeline.vhd:48]
-INFO: [Synth 8-256] done synthesizing module 'pipeline' (18#1) [C:/cygwin/home/plasma/vhdl/pipeline.vhd:48]
-INFO: [Synth 8-256] done synthesizing module 'mlite_cpu' (19#1) [C:/cygwin/home/plasma/vhdl/mlite_cpu.vhd:94]
+INFO: [Synth 8-256] done synthesizing module 'mult' (17#1) [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/mult.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'pipeline' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/pipeline.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'pipeline' (18#1) [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/pipeline.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'mlite_cpu' (19#1) [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/mlite_cpu.vhd:94]
 	Parameter memory_type bound to: XILINX_16X - type: string 
-INFO: [Synth 8-638] synthesizing module 'ram' [C:/cygwin/home/plasma/vhdl/ram_image.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'ram' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/ram_image.vhd:39]
 	Parameter memory_type bound to: XILINX_16X - type: string 
 	Parameter INIT bound to: 12'b000000000000 
 	Parameter INITP_00 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
@@ -272,7 +272,7 @@ INFO: [Synth 8-638] synthesizing module 'ram' [C:/cygwin/home/plasma/vhdl/ram_im
 	Parameter INIT_3F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter SRVAL bound to: 12'b000000000000 
 	Parameter WRITE_MODE bound to: WRITE_FIRST - type: string 
-INFO: [Synth 8-113] binding component instance 'RAMB16_S9_inst0' to cell 'RAMB16_S9' [C:/cygwin/home/plasma/vhdl/ram_image.vhd:42]
+INFO: [Synth 8-113] binding component instance 'RAMB16_S9_inst0' to cell 'RAMB16_S9' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/ram_image.vhd:42]
 	Parameter INIT bound to: 12'b000000000000 
 	Parameter INITP_00 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter INITP_01 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
@@ -348,7 +348,7 @@ INFO: [Synth 8-113] binding component instance 'RAMB16_S9_inst0' to cell 'RAMB16
 	Parameter INIT_3F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter SRVAL bound to: 12'b000000000000 
 	Parameter WRITE_MODE bound to: WRITE_FIRST - type: string 
-INFO: [Synth 8-113] binding component instance 'RAMB16_S9_inst1' to cell 'RAMB16_S9' [C:/cygwin/home/plasma/vhdl/ram_image.vhd:119]
+INFO: [Synth 8-113] binding component instance 'RAMB16_S9_inst1' to cell 'RAMB16_S9' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/ram_image.vhd:119]
 	Parameter INIT bound to: 12'b000000000000 
 	Parameter INITP_00 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter INITP_01 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
@@ -424,7 +424,7 @@ INFO: [Synth 8-113] binding component instance 'RAMB16_S9_inst1' to cell 'RAMB16
 	Parameter INIT_3F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter SRVAL bound to: 12'b000000000000 
 	Parameter WRITE_MODE bound to: WRITE_FIRST - type: string 
-INFO: [Synth 8-113] binding component instance 'RAMB16_S9_inst2' to cell 'RAMB16_S9' [C:/cygwin/home/plasma/vhdl/ram_image.vhd:196]
+INFO: [Synth 8-113] binding component instance 'RAMB16_S9_inst2' to cell 'RAMB16_S9' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/ram_image.vhd:196]
 	Parameter INIT bound to: 12'b000000000000 
 	Parameter INITP_00 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter INITP_01 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
@@ -500,16 +500,16 @@ INFO: [Synth 8-113] binding component instance 'RAMB16_S9_inst2' to cell 'RAMB16
 	Parameter INIT_3F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter SRVAL bound to: 12'b000000000000 
 	Parameter WRITE_MODE bound to: WRITE_FIRST - type: string 
-INFO: [Synth 8-113] binding component instance 'RAMB16_S9_inst3' to cell 'RAMB16_S9' [C:/cygwin/home/plasma/vhdl/ram_image.vhd:273]
-INFO: [Synth 8-256] done synthesizing module 'ram' (20#1) [C:/cygwin/home/plasma/vhdl/ram_image.vhd:39]
+INFO: [Synth 8-113] binding component instance 'RAMB16_S9_inst3' to cell 'RAMB16_S9' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/ram_image.vhd:273]
+INFO: [Synth 8-256] done synthesizing module 'ram' (20#1) [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/ram_image.vhd:39]
 	Parameter log_file bound to: UNUSED - type: string 
-INFO: [Synth 8-638] synthesizing module 'uart' [C:/cygwin/home/plasma/vhdl/uart.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'uart' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/uart.vhd:35]
 	Parameter log_file bound to: UNUSED - type: string 
-INFO: [Synth 8-256] done synthesizing module 'uart' (21#1) [C:/cygwin/home/plasma/vhdl/uart.vhd:35]
-INFO: [Synth 8-256] done synthesizing module 'plasma' (22#1) [C:/cygwin/home/plasma/vhdl/plasma.vhd:62]
-INFO: [Synth 8-638] synthesizing module 'RAM_PROGRAM' [C:/cygwin/home/plasma/vhdl/plasma_hw.runs/synth_1/.Xil/Vivado-8540-tp-autom-08/realtime/RAM_PROGRAM_stub.vhdl:18]
-WARNING: [Synth 8-3848] Net pause in module/entity plasma_basys3 does not have driver. [C:/cygwin/home/plasma/vhdl/plasma_hw.srcs/sources_1/new/plasma_basys3.vhd:58]
-INFO: [Synth 8-256] done synthesizing module 'plasma_basys3' (23#1) [C:/cygwin/home/plasma/vhdl/plasma_hw.srcs/sources_1/new/plasma_basys3.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'uart' (21#1) [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/uart.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'plasma' (22#1) [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/plasma.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'RAM_PROGRAM' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/plasma_hw.runs/synth_1/.Xil/Vivado-19668-DESKTOP-HQ317UF/realtime/RAM_PROGRAM_stub.vhdl:18]
+WARNING: [Synth 8-3848] Net pause in module/entity plasma_basys3 does not have driver. [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/plasma_hw.srcs/sources_1/new/plasma_basys3.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'plasma_basys3' (23#1) [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/plasma_hw.srcs/sources_1/new/plasma_basys3.vhd:50]
 WARNING: [Synth 8-3331] design ram has unconnected port address[31]
 WARNING: [Synth 8-3331] design ram has unconnected port address[30]
 WARNING: [Synth 8-3331] design ram has unconnected port address[29]
@@ -530,7 +530,7 @@ WARNING: [Synth 8-3331] design ram has unconnected port address[15]
 WARNING: [Synth 8-3331] design ram has unconnected port address[14]
 WARNING: [Synth 8-3331] design ram has unconnected port address[13]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 363.605 ; gain = 153.328
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 331.875 ; gain = 122.355
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -539,23 +539,23 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin inst_2:mem_pause_in to constant 0 [C:/cygwin/home/plasma/vhdl/plasma_hw.srcs/sources_1/new/plasma_basys3.vhd:128]
+WARNING: [Synth 8-3295] tying undriven pin inst_2:mem_pause_in to constant 0 [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/plasma_hw.srcs/sources_1/new/plasma_basys3.vhd:128]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 363.605 ; gain = 153.328
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 331.875 ; gain = 122.355
 ---------------------------------------------------------------------------------
-WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'RAM_PROGRAM' instantiated as 'inst_3' [C:/cygwin/home/plasma/vhdl/plasma_hw.srcs/sources_1/new/plasma_basys3.vhd:152]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'RAM_PROGRAM' instantiated as 'inst_3' [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/plasma_hw.srcs/sources_1/new/plasma_basys3.vhd:152]
 INFO: [Netlist 29-17] Analyzing 132 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/cygwin/home/plasma/vhdl/plasma_hw.runs/synth_1/.Xil/Vivado-8540-tp-autom-08/dcp/RAM_PROGRAM_in_context.xdc] for cell 'inst_3'
-Finished Parsing XDC File [C:/cygwin/home/plasma/vhdl/plasma_hw.runs/synth_1/.Xil/Vivado-8540-tp-autom-08/dcp/RAM_PROGRAM_in_context.xdc] for cell 'inst_3'
-Parsing XDC File [C:/cygwin/home/plasma/vhdl/Basys3_Master.xdc]
-Finished Parsing XDC File [C:/cygwin/home/plasma/vhdl/Basys3_Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/cygwin/home/plasma/vhdl/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/plasma_basys3_propImpl.xdc].
+Parsing XDC File [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/plasma_hw.runs/synth_1/.Xil/Vivado-19668-DESKTOP-HQ317UF/dcp/RAM_PROGRAM_in_context.xdc] for cell 'inst_3'
+Finished Parsing XDC File [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/plasma_hw.runs/synth_1/.Xil/Vivado-19668-DESKTOP-HQ317UF/dcp/RAM_PROGRAM_in_context.xdc] for cell 'inst_3'
+Parsing XDC File [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/Basys3_Master.xdc]
+Finished Parsing XDC File [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/plasma_basys3_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/plasma_basys3_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
@@ -564,23 +564,23 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM16X1D => RAM32X1D (RAMD32, RAMD32): 128 instances
   RAMB16_S9 => RAMB18E1: 4 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 663.875 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 631.703 ; gain = 0.008
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'inst_3' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 663.875 ; gain = 453.598
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 631.754 ; gain = 422.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 663.875 ; gain = 453.598
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 631.754 ; gain = 422.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 663.875 ; gain = 453.598
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 631.754 ; gain = 422.234
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "is_syscall" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "c_source" won't be mapped to RAM because it is too sparse
@@ -597,12 +597,12 @@ INFO: [Synth 8-5546] ROM "mem_source" won't be mapped to RAM because it is too s
 INFO: [Synth 8-5544] ROM "do_add" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "negate_reg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "mode_reg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/cygwin/home/plasma/vhdl/uart.vhd:92]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/uart.vhd:92]
 INFO: [Synth 8-5544] ROM "enable_misc" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "ram_enable" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "irq_mask_reg" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 663.875 ; gain = 453.598
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 631.754 ; gain = 422.234
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -911,7 +911,7 @@ WARNING: [Synth 8-3332] Sequential element (inst_1/q_int_reg[18]) is unused and 
 WARNING: [Synth 8-3332] Sequential element (inst_4/clk_div1/count_reg[1]) is unused and will be removed from module plasma_basys3.
 WARNING: [Synth 8-3332] Sequential element (inst_2/u3_uart/delay_read_reg_reg[9]) is unused and will be removed from module plasma_basys3.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 663.875 ; gain = 453.598
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 631.754 ; gain = 422.234
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -926,10 +926,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 676.582 ; gain = 466.305
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 644.477 ; gain = 434.957
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 700.332 ; gain = 490.055
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 667.313 ; gain = 457.793
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -941,7 +941,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 782.488 ; gain = 572.211
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 749.734 ; gain = 540.215
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -965,7 +965,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 782.488 ; gain = 572.211
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 749.734 ; gain = 540.215
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -978,7 +978,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 782.488 ; gain = 572.211
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 749.734 ; gain = 540.215
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -990,25 +990,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 782.488 ; gain = 572.211
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 749.734 ; gain = 540.215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 782.488 ; gain = 572.211
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 749.734 ; gain = 540.215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 782.488 ; gain = 572.211
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 749.734 ; gain = 540.215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 782.488 ; gain = 572.211
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 749.734 ; gain = 540.215
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1063,11 +1063,11 @@ Report Instance Areas:
 |15    |    compteur                  |cpt       |     8|
 +------+------------------------------+----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 782.488 ; gain = 572.211
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 749.734 ; gain = 540.215
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 35 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 782.488 ; gain = 241.234
-Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 782.488 ; gain = 572.211
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 749.734 ; gain = 238.836
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 749.734 ; gain = 540.215
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 158 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1081,7 +1081,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 214 Infos, 63 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 782.488 ; gain = 545.180
-INFO: [Common 17-1381] The checkpoint 'C:/cygwin/home/plasma/vhdl/plasma_hw.runs/synth_1/plasma_basys3.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 782.488 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Apr 20 18:00:09 2021...
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 749.734 ; gain = 540.215
+INFO: [Common 17-1381] The checkpoint 'D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/plasma_hw.runs/synth_1/plasma_basys3.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 749.734 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon May 03 21:37:49 2021...

@@ -126,3 +126,12 @@ bootldr:
 	$(CP) code.txt $(VHDL_DIR)
 
 
+seg:
+	$(AS_MIPS) -o boot.o boot.asm
+	$(GCC_MIPS) seg.c
+	$(GCC_MIPS) no_os.c
+	$(LD_MIPS) -Ttext 0x10000000 -eentry -Map test.map -s -N -o test.axf \
+		boot.o seg.o no_os.o
+	-$(DUMP_MIPS) --disassemble test.axf > test.lst
+	$(CONVERT_BIN)
+	$(CP) code.txt $(VHDL_DIR)

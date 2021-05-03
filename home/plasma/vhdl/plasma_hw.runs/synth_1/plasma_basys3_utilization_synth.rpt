@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date         : Tue Apr 20 18:00:09 2021
-| Host         : tp-autom-08 running 64-bit major release  (build 9200)
+| Date         : Mon May 03 21:37:49 2021
+| Host         : DESKTOP-HQ317UF running 64-bit major release  (build 9200)
 | Command      : report_utilization -file plasma_basys3_utilization_synth.rpt -pb plasma_basys3_utilization_synth.pb
 | Design       : plasma_basys3
 | Device       : 7a35tcpg236-1

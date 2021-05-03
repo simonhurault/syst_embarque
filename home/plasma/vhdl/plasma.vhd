@@ -113,8 +113,10 @@ begin  --architecture
                  counter_reg(18) & not counter_reg(18) &
                  not uart_write_busy & uart_data_avail;
    irq <= '1' when (irq_status and irq_mask_reg) /= ZERO(7 downto 0) else '0';
-   gpio0_out(31 downto 29) <= gpio0_reg(31 downto 29);
-   gpio0_out(23 downto 0) <= gpio0_reg(23 downto 0);
+--   gpio0_out(31 downto 29) <= gpio0_reg(31 downto 29);
+--   gpio0_out(23 downto 0) <= gpio0_reg(23 downto 0);
+   gpio0_out <= gpio0_reg;
+
 
    enable_misc <= '1' when cpu_address(30 downto 28) = "010" else '0';
    enable_uart <= '1' when enable_misc = '1' and cpu_address(7 downto 4) = "0000" else '0';
@@ -263,7 +265,7 @@ begin  --architecture
       byte_we <= cpu_byte_we;
       data_write <= cpu_data_w;
       eth_pause <= '0';
-      gpio0_out(28 downto 24) <= ZERO(28 downto 24);
+--      gpio0_out(28 downto 24) <= ZERO(28 downto 24);
       irq_eth_rec <= '0';
       irq_eth_send <= '0';
    end generate;

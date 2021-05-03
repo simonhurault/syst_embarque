@@ -63,3 +63,11 @@ int getch(void)
    while(!kbhit()) ;
    return MemoryRead(UART_READ);
 }
+
+
+void SEG7(char E4, char E3, char E2, char E1) {
+	//ALIGNEMENT DES PARAMETRES PAR DECALAGE A GAUCHE DE X BITS
+	int tmp=E4<<16 | E3<<20 | E2<<24 | E1<<28 ;
+	MemoryWrite(GPIO0_CLEAR, (~tmp) & 0xffff0000); //clear
+	MemoryWrite(GPIO0_OUT, tmp); //set
+} 
