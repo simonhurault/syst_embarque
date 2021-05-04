@@ -26,6 +26,8 @@
 #define GPIOA_IN          0x20000050
 #define COUNTER_REG       0x20000060
 #define ETHERNET_REG      0x20000070
+#define GPIO1_OUT         0x20000080
+#define GPIO1_CLEAR       0x20000090
 #define FLASH_BASE        0x30000000
 
 /*********** GPIO out bits ***************/

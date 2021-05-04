@@ -45,7 +45,7 @@ begin
       variable storage : storage_array;
       variable index : natural := 0 ;
       --file load_file : text open read_mode is "/cygwin/home/redal/plasma/tools/code.txt";
-      file load_file : text open read_mode is "c:\cygwin\home\redal\plasma\vhdl\code.txt";
+      file load_file : text open read_mode is "C:\cygwin\home\simon\plasma\vhdl\code.txt";
       variable hex_file_line : line;
    begin
 

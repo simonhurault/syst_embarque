@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="17" Path="D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/plasma_hw.xpr">
+<Project Version="7" Minor="17" Path="C:/cygwin/home/simon/plasma/vhdl/plasma_hw.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="5dffb146d854476aa38616af5e4f2fe8"/>

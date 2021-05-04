@@ -22,6 +22,8 @@
 --   0x20000050  GPIOA In
 --   0x20000060  Counter
 --   0x20000070  Ethernet transmit count
+--   0x20000080  GPIO1 Out Set bits
+--   0x20000090  GPIO1 Out Clear bits
 --   IRQ bits:
 --      7   GPIO31
 --      6  ^GPIO31
@@ -56,6 +58,7 @@ entity plasma is
         no_ddr_stop  : out std_logic;
         
         gpio0_out    : out std_logic_vector(31 downto 0);
+        gpio1_out    : out std_logic_vector(31 downto 0);
         gpioA_in     : in std_logic_vector(31 downto 0));
 end; --entity plasma
 
@@ -81,6 +84,7 @@ architecture logic of plasma is
    signal enable_eth        : std_logic;
 
    signal gpio0_reg         : std_logic_vector(31 downto 0);
+   signal gpio1_reg         : std_logic_vector(31 downto 0);
    signal uart_write_busy   : std_logic;
    signal uart_data_avail   : std_logic;
    signal irq_mask_reg      : std_logic_vector(7 downto 0);
@@ -116,6 +120,8 @@ begin  --architecture
 --   gpio0_out(31 downto 29) <= gpio0_reg(31 downto 29);
 --   gpio0_out(23 downto 0) <= gpio0_reg(23 downto 0);
    gpio0_out <= gpio0_reg;
+   gpio1_out <= gpio1_reg;
+   
 
 
    enable_misc <= '1' when cpu_address(30 downto 28) = "010" else '0';
@@ -171,7 +177,7 @@ begin  --architecture
 
    misc_proc: process(clk, reset, cpu_address, enable_misc,
       ram_data_r, data_read, data_read_uart, cpu_pause,
-      irq_mask_reg, irq_status, gpio0_reg, write_enable,
+      irq_mask_reg, irq_status, gpio0_reg, gpio1_reg, write_enable,
       cache_checking,
       gpioA_in, counter_reg, cpu_data_w)
    begin
@@ -186,17 +192,19 @@ begin  --architecture
          end if;
       when "010" =>         --misc
          case cpu_address(6 downto 4) is
-         when "000" =>      --uart
+         when "0000" =>      --uart
             cpu_data_r <= ZERO(31 downto 8) & data_read_uart;
-         when "001" =>      --irq_mask
+         when "0001" =>      --irq_mask
             cpu_data_r <= ZERO(31 downto 8) & irq_mask_reg;
-         when "010" =>      --irq_status
+         when "0010" =>      --irq_status
             cpu_data_r <= ZERO(31 downto 8) & irq_status;
-         when "011" =>      --gpio0
+         when "0011" =>      --gpio0
             cpu_data_r <= gpio0_reg;
-         when "101" =>      --gpioA
+         when "1000" =>      --gpio1
+            cpu_data_r <= gpio1_reg;
+         when "0101" =>      --gpioA
             cpu_data_r <= gpioA_in;
-         when "110" =>      --counter
+         when "0110" =>      --counter
             cpu_data_r <= counter_reg;        
          when others =>
             cpu_data_r <= gpioA_in;
@@ -210,16 +218,21 @@ begin  --architecture
       if reset = '1' then
          irq_mask_reg <= ZERO(7 downto 0);
          gpio0_reg <= ZERO;
+         gpio1_reg <= ZERO;
          counter_reg <= ZERO;
       elsif rising_edge(clk) then
          if cpu_pause = '0' then
             if enable_misc = '1' and write_enable = '1' then
-               if cpu_address(6 downto 4) = "001" then
+               if cpu_address(7 downto 4) = "0001" then
                   irq_mask_reg <= cpu_data_w(7 downto 0);
-               elsif cpu_address(6 downto 4) = "011" then
+               elsif cpu_address(7 downto 4) = "0011" then
                   gpio0_reg <= gpio0_reg or cpu_data_w;
-               elsif cpu_address(6 downto 4) = "100" then
+               elsif cpu_address(7 downto 4) = "0100" then
                   gpio0_reg <= gpio0_reg and not cpu_data_w;
+               elsif cpu_address(7 downto 4) = "1000" then
+                  gpio1_reg <= gpio1_reg or cpu_data_w;
+               elsif cpu_address(7 downto 4) = "1001" then
+                  gpio1_reg <= gpio1_reg and not cpu_data_w; 
                end if;
             end if;
          end if;

@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date         : Mon May 03 21:38:21 2021
-| Host         : DESKTOP-HQ317UF running 64-bit major release  (build 9200)
+| Date         : Tue May 04 17:36:12 2021
+| Host         : cao1-07 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file plasma_basys3_control_sets_placed.rpt
 | Design       : plasma_basys3
 | Device       : xc7a35t
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    26 |
-| Unused register locations in slices containing registers |    70 |
+| Number of unique control sets                            |    36 |
+| Unused register locations in slices containing registers |   117 |
 +----------------------------------------------------------+-------+
 
 
@@ -37,7 +37,7 @@ Table of Contents
 | No           | No                    | Yes                    |              93 |           43 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |             445 |          239 |
+| Yes          | No                    | Yes                    |             462 |          258 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -45,50 +45,64 @@ Table of Contents
 3. Detailed Control Set Information
 -----------------------------------
 
-+---------------------------------+-------------------------------------------------------------+-------------------------------------+------------------+----------------+
-|           Clock Signal          |                        Enable Signal                        |           Set/Reset Signal          | Slice Load Count | Bel Load Count |
-+---------------------------------+-------------------------------------------------------------+-------------------------------------+------------------+----------------+
-|  inst_4/clk_div2/CLK            |                                                             | bntC_IBUF                           |                1 |              2 |
-|  clk_IBUF_BUFG                  |                                                             | bntC_IBUF                           |                2 |              3 |
-|  clk25_temp_BUFG                | inst_2/u1_cpu/neqOp                                         | bntC_IBUF                           |                1 |              4 |
-|  clk25_temp_BUFG                | inst_2/u3_uart/bits_read_reg[3]_i_1_n_0                     | bntC_IBUF                           |                2 |              4 |
-|  clk25_temp_BUFG                | inst_2/u3_uart/read_value_reg[6]_i_1_n_0                    | bntC_IBUF                           |                3 |              7 |
-|  clk25_temp_BUFG                | inst_2/u1_cpu/u2_mem_ctrl/irq_mask_reg_reg[0]_0[0]          | bntC_IBUF                           |                3 |              8 |
-|  clk25_temp_BUFG                | inst_2/u3_uart/data_read_reg_0                              | bntC_IBUF                           |                3 |              8 |
-|  clk25_temp_BUFG                | inst_2/u3_uart/data_save_reg[12]                            | bntC_IBUF                           |                3 |              8 |
-|  clk25_temp_BUFG                | inst_2/u3_uart/delay_read_reg[8]_i_1_n_0                    | bntC_IBUF                           |                3 |              9 |
-|  clk25_temp_BUFG                | inst_2/u3_uart/data_save_reg[3]                             | bntC_IBUF                           |                3 |              9 |
-|  clk25_temp_BUFG                | inst_2/u1_cpu/u2_mem_ctrl/delay_write_reg_reg[9][0]         | bntC_IBUF                           |                3 |             10 |
-|  clk25_temp_BUFG                | inst_2/u1_cpu/u2_mem_ctrl/E[0]                              | bntC_IBUF                           |                5 |             13 |
-|  inst_4/clk_div1/count_reg[0]_0 |                                                             | bntC_IBUF                           |                5 |             18 |
-|  clk25_temp_BUFG                | inst_2/u1_cpu/u2_mem_ctrl/mem_state_reg                     | inst_2/u1_cpu/u8_mult/reset_in3_out |                9 |             20 |
-|  clk25_temp_BUFG                | inst_2/u1_cpu/pipeline3.u9_pipeline/E[0]                    | inst_2/u1_cpu/u8_mult/reset_in3_out |               18 |             32 |
-|  clk25_temp_BUFG                | inst_2/u1_cpu/pipeline3.u9_pipeline/aa_reg_reg[31][0]       | inst_2/u1_cpu/u8_mult/reset_in3_out |               18 |             32 |
-|  clk25_temp_BUFG                | inst_2/u1_cpu/u8_mult/upper_reg[31]_i_1_n_0                 | inst_2/u1_cpu/u8_mult/reset_in3_out |               23 |             32 |
-|  clk25_temp_BUFG                | inst_2/u1_cpu/u2_mem_ctrl/gpio0_reg_reg[0][0]               | bntC_IBUF                           |               22 |             32 |
-|  clk25_temp_BUFG                | inst_2/u1_cpu/u2_mem_ctrl/opcode_reg                        | inst_2/u1_cpu/u8_mult/reset_in3_out |               12 |             32 |
-|  clk25_temp_BUFG                | inst_2/u1_cpu/u2_mem_ctrl/next_opcode_reg                   | inst_2/u1_cpu/u8_mult/reset_in3_out |               13 |             32 |
-|  clk25_temp_BUFG                |                                                             | bntC_IBUF                           |               12 |             34 |
-|  clk25_temp_BUFG                |                                                             | inst_2/u1_cpu/u8_mult/reset_in3_out |               23 |             36 |
-|  clk25_temp_BUFG                | inst_2/u1_cpu/pipeline3.u9_pipeline/count_reg_reg[5][0]     | inst_2/u1_cpu/u8_mult/reset_in3_out |               24 |             38 |
-|  clk25_temp_BUFG                | inst_2/u1_cpu/u2_mem_ctrl/mult_funcD_reg[0][0]              | inst_2/u1_cpu/u8_mult/reset_in3_out |               71 |            115 |
-|  clk25_temp_BUFG                | inst_2/u1_cpu/pipeline3.u9_pipeline/data_write_reg_reg[8]   |                                     |               32 |            128 |
-|  clk25_temp_BUFG                | inst_2/u1_cpu/pipeline3.u9_pipeline/data_write_reg_reg[8]_3 |                                     |               32 |            128 |
-+---------------------------------+-------------------------------------------------------------+-------------------------------------+------------------+----------------+
++---------------------------------+-----------------------------------------------------------+-------------------------------------------------------------+------------------+----------------+
+|           Clock Signal          |                       Enable Signal                       |                       Set/Reset Signal                      | Slice Load Count | Bel Load Count |
++---------------------------------+-----------------------------------------------------------+-------------------------------------------------------------+------------------+----------------+
+|  clk25_temp_BUFG                |                                                           | inst_2/u1_cpu/u2_mem_ctrl/AR[0]                             |                1 |              1 |
+|  inst_4/clk_div2/CLK            |                                                           | bntC_IBUF                                                   |                1 |              2 |
+|  clk25_temp_BUFG                |                                                           | inst_2/u1_cpu/pipeline3.u9_pipeline/shift_funcD_reg[0]_0[0] |                1 |              2 |
+|  clk_IBUF_BUFG                  |                                                           | bntC_IBUF                                                   |                2 |              3 |
+|  clk25_temp_BUFG                | inst_2/u1_cpu/pipeline3.u9_pipeline/E[0]                  | inst_2/u1_cpu/u8_mult/negate_reg_reg_0[0]                   |                2 |              4 |
+|  clk25_temp_BUFG                | inst_2/u1_cpu/neqOp                                       | bntC_IBUF                                                   |                1 |              4 |
+|  clk25_temp_BUFG                | inst_2/u3_uart/bits_read_reg[3]_i_1_n_0                   | bntC_IBUF                                                   |                2 |              4 |
+|  clk25_temp_BUFG                | inst_2/u1_cpu/pipeline3.u9_pipeline/E[0]                  | inst_2/u1_cpu/u2_mem_ctrl/AR[0]                             |                2 |              5 |
+|  clk25_temp_BUFG                | inst_2/u1_cpu/u2_mem_ctrl/mult_funcD_reg[0][0]            | inst_2/u1_cpu/u8_mult/negate_reg_reg_0[0]                   |                3 |              6 |
+|  clk25_temp_BUFG                |                                                           | inst_2/u1_cpu/u8_mult/negate_reg_reg_0[0]                   |                6 |              7 |
+|  clk25_temp_BUFG                | inst_2/u3_uart/read_value_reg[6]_i_1_n_0                  | bntC_IBUF                                                   |                3 |              7 |
+|  clk25_temp_BUFG                | inst_2/u1_cpu/u2_mem_ctrl/irq_mask_reg_reg[0][0]          | bntC_IBUF                                                   |                4 |              8 |
+|  clk25_temp_BUFG                | inst_2/u3_uart/data_read_reg_0                            | bntC_IBUF                                                   |                2 |              8 |
+|  clk25_temp_BUFG                | inst_2/u3_uart/data_save_reg[12]                          | bntC_IBUF                                                   |                1 |              8 |
+|  clk25_temp_BUFG                | inst_2/u3_uart/data_save_reg[3]                           | bntC_IBUF                                                   |                4 |              9 |
+|  clk25_temp_BUFG                | inst_2/u3_uart/delay_read_reg[9]_i_1_n_0                  | bntC_IBUF                                                   |                5 |             10 |
+|  clk25_temp_BUFG                | inst_2/u3_uart/delay_write_reg[9]_i_1_n_0                 | bntC_IBUF                                                   |                4 |             10 |
+|  clk25_temp_BUFG                | inst_2/u1_cpu/pipeline3.u9_pipeline/E[0]                  | inst_2/u1_cpu/u2_mem_ctrl/next_opcode_reg_reg[0]_0[0]       |                2 |             11 |
+|  clk25_temp_BUFG                | inst_2/u1_cpu/u2_mem_ctrl/opcode_reg                      | inst_2/u1_cpu/u2_mem_ctrl/next_opcode_reg_reg[0]_0[0]       |                6 |             11 |
+|  clk25_temp_BUFG                | inst_2/u3_uart/data_write_reg_1                           | bntC_IBUF                                                   |                4 |             13 |
+|  clk25_temp_BUFG                | inst_2/u1_cpu/u2_mem_ctrl/gpio1_reg_reg[0][0]             | bntC_IBUF                                                   |                6 |             16 |
+|  inst_4/clk_div1/count_reg[0]_0 |                                                           | bntC_IBUF                                                   |                5 |             18 |
+|  clk25_temp_BUFG                | inst_2/u1_cpu/pipeline3.u9_pipeline/count_reg_reg[5][0]   | inst_2/u1_cpu/pipeline3.u9_pipeline/shift_funcD_reg[0]_0[0] |               12 |             18 |
+|  clk25_temp_BUFG                | inst_2/u1_cpu/pipeline3.u9_pipeline/count_reg_reg[5][0]   | inst_2/u1_cpu/u8_mult/negate_reg_reg_0[0]                   |               13 |             20 |
+|  clk25_temp_BUFG                | inst_2/u1_cpu/u2_mem_ctrl/opcode_reg                      | inst_2/u1_cpu/u8_mult/negate_reg_reg_0[0]                   |               12 |             21 |
+|  clk25_temp_BUFG                |                                                           | inst_2/u1_cpu/u2_mem_ctrl/next_opcode_reg_reg[0]_0[0]       |               14 |             26 |
+|  clk25_temp_BUFG                | inst_2/u1_cpu/pipeline3.u9_pipeline/aa_reg_reg[31][0]     | inst_2/u1_cpu/u8_mult/negate_reg_reg_0[0]                   |               18 |             32 |
+|  clk25_temp_BUFG                | inst_2/u1_cpu/pipeline3.u9_pipeline/lower_reg_reg[31][0]  | inst_2/u1_cpu/pipeline3.u9_pipeline/shift_funcD_reg[0]_0[0] |               17 |             32 |
+|  clk25_temp_BUFG                | inst_2/u1_cpu/u2_mem_ctrl/gpio0_reg_reg[0][0]             | bntC_IBUF                                                   |               20 |             32 |
+|  clk25_temp_BUFG                | inst_2/u1_cpu/u2_mem_ctrl/next_opcode_reg                 | inst_2/u1_cpu/u2_mem_ctrl/next_opcode_reg_reg[0]_0[0]       |               16 |             32 |
+|  clk25_temp_BUFG                | inst_2/u1_cpu/u8_mult/upper_reg[31]_i_1_n_0               | inst_2/u1_cpu/u8_mult/negate_reg_reg_0[0]                   |               25 |             32 |
+|  clk25_temp_BUFG                |                                                           | bntC_IBUF                                                   |               13 |             34 |
+|  clk25_temp_BUFG                | inst_2/u1_cpu/u2_mem_ctrl/mult_funcD_reg[0][0]            | inst_2/u1_cpu/u2_mem_ctrl/next_opcode_reg_reg[0]_0[0]       |               29 |             35 |
+|  clk25_temp_BUFG                | inst_2/u1_cpu/u2_mem_ctrl/mult_funcD_reg[0][0]            | inst_2/u1_cpu/pipeline3.u9_pipeline/shift_funcD_reg[0]_0[0] |               45 |             74 |
+|  clk25_temp_BUFG                | inst_2/u1_cpu/pipeline3.u9_pipeline/irq_mask_reg_reg[7]   |                                                             |               32 |            128 |
+|  clk25_temp_BUFG                | inst_2/u1_cpu/pipeline3.u9_pipeline/irq_mask_reg_reg[7]_3 |                                                             |               32 |            128 |
++---------------------------------+-----------------------------------------------------------+-------------------------------------------------------------+------------------+----------------+
 
 
 +--------+-----------------------+
 | Fanout | Number of ControlSets |
 +--------+-----------------------+
-| 2      |                     1 |
+| 1      |                     1 |
+| 2      |                     2 |
 | 3      |                     1 |
-| 4      |                     2 |
-| 7      |                     1 |
+| 4      |                     3 |
+| 5      |                     1 |
+| 6      |                     1 |
+| 7      |                     2 |
 | 8      |                     3 |
-| 9      |                     2 |
-| 10     |                     1 |
+| 9      |                     1 |
+| 10     |                     2 |
+| 11     |                     2 |
 | 13     |                     1 |
-| 16+    |                    14 |
+| 16+    |                    16 |
 +--------+-----------------------+
 
 

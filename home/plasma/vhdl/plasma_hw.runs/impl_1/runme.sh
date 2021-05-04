@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=D:/Vivado/2016.4/ids_lite/ISE/bin/nt64;D:/Vivado/2016.4/ids_lite/ISE/lib/nt64:D:/Vivado/2016.4/bin
+  PATH=C:/Xilinx/Vivado/2016.4/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2016.4/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2016.4/bin
 else
-  PATH=D:/Vivado/2016.4/ids_lite/ISE/bin/nt64;D:/Vivado/2016.4/ids_lite/ISE/lib/nt64:D:/Vivado/2016.4/bin:$PATH
+  PATH=C:/Xilinx/Vivado/2016.4/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2016.4/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2016.4/bin:$PATH
 fi
 export PATH
 
@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/cours/mea4/systeme_emb/projet/syst_embarque/home/plasma/vhdl/plasma_hw.runs/impl_1'
+HD_PWD='C:/cygwin/home/simon/plasma/vhdl/plasma_hw.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .write_bitstream.begin.rst
+/bin/touch .init_design.begin.rst
 EAStep vivado -log plasma_basys3.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source plasma_basys3.tcl -notrace
 
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1620070620">
-  <File Type="PA-TCL" Name="plasma_basys3.tcl"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1620142486">
   <File Type="RDS-PROPCONSTRS" Name="plasma_basys3_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="plasma_basys3.tcl"/>
   <File Type="RDS-RDS" Name="plasma_basys3.vds"/>
   <File Type="RDS-UTIL" Name="plasma_basys3_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="plasma_basys3_utilization_synth.pb"/>

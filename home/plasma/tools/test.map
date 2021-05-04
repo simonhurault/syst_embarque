@@ -13,10 +13,10 @@ Linker script and memory map
 
 Address of section .text set to 0x10000000
 LOAD boot.o
-LOAD seg.o
+LOAD demo_basys3.o
 LOAD no_os.o
 
-.text           0x10000000      0x464
+.text           0x10000000      0x4b4
                 0x10000000                _ftext=.
  *(.text)
  .text          0x10000000      0x200 boot.o
@@ -28,18 +28,19 @@ LOAD no_os.o
                 0x1000003c                interrupt_service_routine
                 0x100001f4                OS_Syscall
                 0x10000128                OS_AsmInterruptEnable
- .text          0x10000200       0x74 seg.o
+ .text          0x10000200       0x78 demo_basys3.o
                 0x10000200                main
- .text          0x10000274      0x1f0 no_os.o
-                0x10000274                putchar
-                0x100002b8                puts
-                0x100003d8                kbhit
-                0x10000418                SEG7
-                0x100003ec                getch
-                0x100003b8                OS_InterruptServiceRoutine
-                0x1000035c                print_hex
-                0x10000324                Led
-                0x10000348                InputName
+ .text          0x10000278      0x23c no_os.o
+                0x10000278                putchar
+                0x100002bc                puts
+                0x100003dc                kbhit
+                0x1000041c                SEG7
+                0x100003f0                getch
+                0x100003bc                OS_InterruptServiceRoutine
+                0x10000360                print_hex
+                0x10000328                Led
+                0x1000034c                InputName
+                0x10000468                SEG7_1
  *(.stub)
  *(.gnu.warning)
  *(.gnu.linkonce.t*)
@@ -51,13 +52,13 @@ LOAD no_os.o
 
 .fini
  *(.fini)
-                0x10000464                _ecode=.
+                0x100004b4                _ecode=.
 
-.reginfo        0x10000464       0x18
+.reginfo        0x100004b4       0x18
  *(.reginfo)
- .reginfo       0x10000464       0x18 boot.o
- .reginfo       0x1000047c       0x18 seg.o
- .reginfo       0x1000047c       0x18 no_os.o
+ .reginfo       0x100004b4       0x18 boot.o
+ .reginfo       0x100004cc       0x18 demo_basys3.o
+ .reginfo       0x100004cc       0x18 no_os.o
 
 .ctors
  *(.ctors)
@@ -77,24 +78,25 @@ LOAD no_os.o
 .sdefini
  *(.sdefini)
 
-.rodata
+.rodata         0x100004cc        0x8
  *(.rodata)
+ .rodata        0x100004cc        0x8 demo_basys3.o
  *(.rdata)
  *(.gnu.linkonce.r*)
 
 .rodata1
  *(.rodata1)
-                0x10000494                _etext=.
-                0x10000494                PROVIDE (etext, .)
+                0x100004d4                _etext=.
+                0x100004d4                PROVIDE (etext, .)
 
-.data           0x1000047c        0x0
-                0x1000047c                _fdata=.
+.data           0x100004d4        0x0
+                0x100004d4                _fdata=.
  *(.data)
  *(.gnu.linkonce.d*)
 
 .data1
  *(.data1)
-                0x1000846c                _gp=(.+0x7ff0)
+                0x100084c4                _gp=(.+0x7ff0)
 
 .lit8
  *(.lit8)
@@ -105,24 +107,24 @@ LOAD no_os.o
 .sdata
  *(.sdata)
  *(.gnu.linkonce.s*)
-                0x1000047c                _edata=.
-                0x1000047c                PROVIDE (edata, .)
-                0x10000480                .=ALIGN(0x8)
-                0x1000047c                __bss_start=.
-                0x10000480                _fbss=__bss_start
+                0x100004d4                _edata=.
+                0x100004d4                PROVIDE (edata, .)
+                0x100004d8                .=ALIGN(0x8)
+                0x100004d4                __bss_start=.
+                0x100004d8                _fbss=__bss_start
 
 .sbss
  *(.sbss)
  *(.scommon)
 
-.bss            0x10000480      0x200
+.bss            0x100004e0      0x200
  *(.dynbss)
  *(.bss)
  *(COMMON)
- COMMON         0x10000480      0x200 boot.o
-                0x10000480                InitStack
-                0x10000680                _end=.
-                0x10000680                PROVIDE (end, .)
+ COMMON         0x100004e0      0x200 boot.o
+                0x100004e0                InitStack
+                0x100006e0                _end=.
+                0x100006e0                PROVIDE (end, .)
 
 .stab
  *(.stab)

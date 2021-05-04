@@ -24,7 +24,7 @@ use ieee.std_logic_1164.all;
 
 entity hex7seg is
   port(
-    hex: in std_logic_vector(3 downto 0);
+    hex: in std_logic_vector(5 downto 0);
     a_to_g: out std_logic_vector(6 downto 0));
 end hex7seg;
 
@@ -48,6 +48,26 @@ begin
       when x"C" => a_to_g <="0110001"; -- C
       when x"D" => a_to_g <="1000010"; -- d
       when x"E" => a_to_g <="0110000"; -- E
+      when x"F" => a_to_g <="0111000"; -- F
+      when x"F" => a_to_g <="0111000"; -- F
+      when x"F" => a_to_g <="0111000"; -- F
+      when x"F" => a_to_g <="0111000"; -- F
+      when x"F" => a_to_g <="0111000"; -- F
+      when x"F" => a_to_g <="0111000"; -- F
+      when x"F" => a_to_g <="0111000"; -- F
+      when x"F" => a_to_g <="0111000"; -- F
+      when x"F" => a_to_g <="0111000"; -- F
+      when x"F" => a_to_g <="0111000"; -- F
+      when x"F" => a_to_g <="0111000"; -- F
+      when x"F" => a_to_g <="0111000"; -- F
+      when x"F" => a_to_g <="0111000"; -- F
+      when x"F" => a_to_g <="0111000"; -- F
+      when x"F" => a_to_g <="0111000"; -- F
+      when x"F" => a_to_g <="0111000"; -- F
+      when x"F" => a_to_g <="0111000"; -- F
+      when x"F" => a_to_g <="0111000"; -- F
+      when x"F" => a_to_g <="0111000"; -- F
+      when x"F" => a_to_g <="0111000"; -- F
       when others => a_to_g <="0111000"; -- F
     end case;    
   end process;

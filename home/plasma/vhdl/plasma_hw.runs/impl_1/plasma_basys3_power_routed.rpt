@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date             : Mon May 03 21:38:45 2021
-| Host             : DESKTOP-HQ317UF running 64-bit major release  (build 9200)
+| Date             : Tue May 04 17:36:37 2021
+| Host             : cao1-07 running 64-bit major release  (build 9200)
 | Command          : report_power -file plasma_basys3_power_routed.rpt -pb plasma_basys3_power_summary_routed.pb -rpx plasma_basys3_power_routed.rpx
 | Design           : plasma_basys3
 | Device           : xc7a35tcpg236-1
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.124 |
-| Dynamic (W)              | 0.052 |
+| Total On-Chip Power (W)  | 0.123 |
+| Dynamic (W)              | 0.051 |
 | Device Static (W)        | 0.072 |
 | Effective TJA (C/W)      | 5.0   |
 | Max Ambient (C)          | 84.4  |
@@ -50,18 +50,18 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |    <0.001 |        3 |       --- |             --- |
-| Slice Logic              |     0.007 |     2472 |       --- |             --- |
-|   LUT as Logic           |     0.005 |     1434 |     20800 |            6.89 |
+| Slice Logic              |     0.007 |     2507 |       --- |             --- |
+|   LUT as Logic           |     0.005 |     1458 |     20800 |            7.01 |
 |   LUT as Distributed RAM |     0.002 |      256 |      9600 |            2.67 |
-|   Register               |    <0.001 |      538 |     41600 |            1.29 |
+|   Register               |    <0.001 |      555 |     41600 |            1.33 |
 |   CARRY4                 |    <0.001 |       11 |      8150 |            0.13 |
 |   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
 |   Others                 |     0.000 |       36 |       --- |             --- |
-| Signals                  |     0.007 |     1953 |       --- |             --- |
+| Signals                  |     0.007 |     1978 |       --- |             --- |
 | Block RAM                |     0.009 |        6 |        50 |           12.00 |
-| I/O                      |     0.029 |       36 |       106 |           33.96 |
+| I/O                      |     0.028 |       52 |       106 |           49.06 |
 | Static Power             |     0.072 |          |           |                 |
-| Total                    |     0.124 |          |           |                 |
+| Total                    |     0.123 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,7 +71,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.033 |       0.023 |      0.010 |
+| Vccint    |       1.000 |     0.032 |       0.022 |      0.010 |
 | Vccaux    |       1.800 |     0.014 |       0.001 |      0.013 |
 | Vcco33    |       3.300 |     0.009 |       0.008 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -140,9 +140,9 @@ Table of Contents
 +----------------------------------------------+-----------+
 | Name                                         | Power (W) |
 +----------------------------------------------+-----------+
-| plasma_basys3                                |     0.052 |
+| plasma_basys3                                |     0.051 |
 |   inst_1                                     |    <0.001 |
-|   inst_2                                     |     0.014 |
+|   inst_2                                     |     0.013 |
 |     u1_cpu                                   |     0.012 |
 |       pipeline3.u9_pipeline                  |     0.003 |
 |       u1_pc_next                             |    <0.001 |

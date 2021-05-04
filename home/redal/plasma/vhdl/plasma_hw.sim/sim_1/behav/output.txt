@@ -1,4 +1,0 @@
-0000000003: three
-0000000009: nine
-0000000027: twenty seven
-0000000081: eighty one

@@ -135,3 +135,13 @@ seg:
 	-$(DUMP_MIPS) --disassemble test.axf > test.lst
 	$(CONVERT_BIN)
 	$(CP) code.txt $(VHDL_DIR)
+	
+demo_basys3:
+	$(AS_MIPS) -o boot.o boot.asm
+	$(GCC_MIPS) demo_basys3.c
+	$(GCC_MIPS) no_os.c
+	$(LD_MIPS) -Ttext 0x10000000 -eentry -Map test.map -s -N -o test.axf \
+		boot.o demo_basys3.o no_os.o
+	-$(DUMP_MIPS) --disassemble test.axf > test.lst
+	$(CONVERT_BIN)
+	$(CP) code.txt $(VHDL_DIR)

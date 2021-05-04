@@ -35,14 +35,14 @@ entity plasma_basys3 is
     Port ( clk : in STD_LOGIC;
            RsRx : in STD_LOGIC;
            RsTX : out STD_LOGIC;
-           led : out STD_LOGIC_VECTOR (7 downto 0);
+           led : out STD_LOGIC_VECTOR (15 downto 0);
            bntR : in STD_LOGIC;
            bntL : in STD_LOGIC;
            bntU : in STD_LOGIC;
            bntD : in STD_LOGIC;
            bntC : in STD_LOGIC;
-           sw : in STD_LOGIC_VECTOR (7 downto 0);
-           seg : out STD_LOGIC_VECTOR (6 downto 0);
+           sw : in STD_LOGIC_VECTOR (15 downto 0);
+           seg : out STD_LOGIC_VECTOR (0 to 6);
            an : out STD_LOGIC_VECTOR (3 downto 0);
            dp : out STD_LOGIC);
 end plasma_basys3;
@@ -59,7 +59,8 @@ signal pause        : std_logic;
 signal no_ddr_start : std_logic;
 signal no_ddr_stop  : std_logic;
 signal gpioA_in_0   : std_logic_vector(20 downto 0);
-signal gpio0_out_0   : std_logic_vector(23 downto 0);
+signal gpio0_out_0   : std_logic_vector(15 downto 0);
+signal gpio1_out_0   : std_logic_vector(31 downto 0);
 
 component plasma is
    generic(memory_type : string := "XILINX_16X"; --"DUAL_PORT_" "ALTERA_LPM";
@@ -81,6 +82,7 @@ component plasma is
         no_ddr_stop  : out std_logic;
         
         gpio0_out    : out std_logic_vector(31 downto 0);
+        gpio1_out    : out std_logic_vector(31 downto 0);
         gpioA_in     : in std_logic_vector(31 downto 0));
 end component; --entity plasma
 
@@ -117,8 +119,8 @@ end component;
 
 begin
 
-inst_4: top_7seg port map(rst => bntC, clk => clk, e1 => gpio0_out_0(3 downto 0), e2 => gpio0_out_0(7 downto 4),
-                          e3 => gpio0_out_0(11 downto 8), e4 => gpio0_out_0(15 downto 12), seg => seg, an => an, dp => dp);
+inst_4: top_7seg port map(rst => bntC, clk => clk, e1 => gpio1_out_0(3 downto 0), e2 => gpio1_out_0(7 downto 4),
+                          e3 => gpio1_out_0(11 downto 8), e4 => gpio1_out_0(15 downto 12), seg => seg, an => an, dp => dp);
 
 
 inst_1: Clkdiv port map ( clk => clk,
@@ -139,14 +141,15 @@ inst_2: plasma port map (
                              no_ddr_start         => no_ddr_start,
                              no_ddr_stop          => no_ddr_stop,
                               
-                             gpio0_out(7 downto 0)=> led,
-                             gpio0_out(31 downto 8)=> gpio0_out_0,
-                             gpioA_in(11)        => bntR,
-                             gpioA_in(10)        => bntL,
-                             gpioA_in(9)         => bntU,
-                             gpioA_in(8)         => bntD,
-                             gpioA_in(7 downto 0)=> sw,
-                             gpioA_in(31 downto 12) => gpioA_in_0);
+                             gpio0_out(15 downto 0)=> led,
+                             gpio0_out(31 downto 16)=> gpio0_out_0,
+                             gpio1_out=> gpio1_out_0,
+                             gpioA_in(19)        => bntR,
+                             gpioA_in(18)        => bntL,
+                             gpioA_in(17)         => bntU,
+                             gpioA_in(16)         => bntD,
+                             gpioA_in(15 downto 0)=> sw,
+                             gpioA_in(31 downto 20) => gpioA_in_0);
 
 
 inst_3: RAM_PROGRAM port map(clka => clk, wea => byte_we, addra => address(13 downto 2), dina => data_write,
